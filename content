@@ -1,0 +1,155 @@
+========   CSSP-25: address type-ahead   ========
+
+- When a user starts to type the Name field in the 'Shipment Details' screen, show a drop-down list of matches from their saved addresses
+- User must be able to click on and select any address in the drop-down list to populate the corresponding address fields
+- The drop-down (auto-fill) list must show Name and Address
+- The drop-down list must be formatted as per UX design (must be attached to story or confluence page)
+• There must be an option in the drop-down list for 'this is a new contact/address' - per content writer (to dismiss the drop-down list)
+- The drop-down list must be dismissed when the user clicks anywhere else on the screen, or presses the 'esc' button
+- The list of matches must populate from the 1st character typed
+- The drop down list must show top 7 matches (as per address complete) and further typing is required to narrow down the list of results
+
+
+
+Hide suggestions
+
+
+
+========   CSSP-50: save address   ========
+
+• screen must have a "Save" interaction for the user to click to save the address - as per VD
+- mandatory fields must be filled, else 'Save' interaction will not be active
+• user must be notified that address was saved successfully - as per VD
+• If user selects an existing address and performs a change to the existing address, then the 'Save' interaction will prompt the user if they want to update the existing address, or save as a new address
+
+
+[ ] Save to recipient list
+
+
+This information has been added to the recipient list.
+
+
+orig:     You've updated some details. Remember to indicate if you'd like to save them. 
+meaning:  You've made changes. Indicate if you want to save. It will be a new recipient. 
+suggest:  Indicate if you'd like to save your changes as a new recipient.  
+          (Clear enough that modify existing has to happen in list?)
+
+
+
+========   CSSP-166: view address book   ========
+
+• Address book must be accessible from the Shipment Details page with a link and/or icon to address book (content to be delivered by Ken)
+- Address book page must load with existing addresses shown in alphabetical order (by Name)
+- Address book page must be limited to 50 addresses on page load
+- Address book must allow customers to load additional addresses to the screen by scrolling down (infinite scroll)
+• Address book must have a search box (CSSP-53) to narrow down address results by typing in a search term and clicking the search icon
+• Address book must allow user to go 'back' to Shipment Details page
+• Address book list must show 'Name', 'Company name' and 'Address' (as per UX design)
+
+
+link from details page to contacts: 
+  Manage recipient list
+
+
+placeholder text for search field: 
+  Search names, addresses, or numbers
+
+
+link from contacts to details page:
+  Back to shipment details
+
+
+column headers: 
+  Name
+  Address
+
+
+
+========   CSSP-26: address book, update recipient   ========
+
+• From the address book screen, the user must be able to trigger the update of a saved contact as per the UX/VD design spec (i.e. update icon).
+• User must be able to update the name, email, phone, company name or address details of anyone saved in the address book
+- Address Complete must be shown and used when the country is Canada (same look and feel and behaviour as Shipping Details page for domestic address entry)
+- User must be able to save or cancel the update
+• User must be shown a toast message that the address was updated successfully - toast message will clear when user clicks anywhere else on the screen, or the X to close the toast message.
+- The updated address must be searchable when returning to the address book screen
+- The updated address must be searchable in the 'Shipping Details' screen drop-down for 'Name' field (type-ahead search)
+- All fields for update must only allow the following character counts on the UI (same as Recipient address fields on Shipping Details screen): 
+
+
+image "title" attribute: 
+  Edit recipient
+
+
+Modal title: 
+  Edit recipient
+Fields: 
+  Name *
+  Company
+  Country *
+  Address *
+  Email 
+  Phone 
+CTAs: 
+  [Save] [Cancel]
+
+
+Save notification: 
+  Recipient details have been updated.
+  [or]
+  The recipient's details have been updated. [CHECK content style to see if anything's been established]
+
+
+
+========   CSSP-27: address book, delete recipient   ========
+
+• from the address book screen, the user must be able to select a 'Delete contact' action as per the UX/VD design spec
+- the address entry must be deleted from the address book tables (ie no longer found in the address book search, and no longer shown in type-ahead drop-down on future address entries)
+• user must be asked if they are sure they want to delete the address and be able to cancel or delete on message.
+• Display a Toast Message for successful deletion of message (message should be visible until user clicks anywhere else on the screen, or clicks X to close the toast message)
+
+
+image "title" attribute: 
+  Delete recipient
+
+delete modal title: 
+  Delete recipient
+modal body: 
+  Are you sure you'd like to delete this recipient? 
+modal CTAs: 
+  [Delete] [Cancel]
+
+
+Delete notification: 
+  The recipient has been removed from this list.
+  [or] 
+  The recipient has been deleted.
+
+
+
+========   CSSP-285: address book, add info to form   ========
+
+• in the address book screen there is an icon to ship to contact in the list display
+• when icon is clicked, user must be asked if they want to ship to this contact
+- When confirmed yes, the user must be taken to shipping details screen with contact fields filled in
+- if no, then user must remain on address book screen
+• In the 'edit[sic] contact' modal, there is a button to ship to contact <<<<<< view
+- If clicked, user must be taken to shipping details screen with contact fields filled in
+
+
+image "title" attribute:
+  Add to shipment details         
+
+add-to-shipment confirmation modal title: 
+  Add information to shipment details
+modal body: 
+  %name% (or %company% if not available)
+  %address% + %country%
+modal CTAs: 
+  [Add] [Cancel]                   [look at style to see how large it can be]
+
+
+- notifications
+?
+
+
