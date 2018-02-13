@@ -126,7 +126,6 @@ Delete notification:
   The recipient has been deleted.
 
 
-
 ========   CSSP-285: address book, add info to form   ========
 
 • in the address book screen there is an icon to ship to contact in the list display
@@ -138,10 +137,11 @@ Delete notification:
 
 
 image "title" attribute:
-  Add to shipment details         
+  Ship to recipient?              [system-style language; talk to her] <<<
 
 add-to-shipment confirmation modal title: 
   Add information to shipment details
+ >Ship to recipient?              [you're going to create a label that ships to this recipient]
 modal body: 
   %name% (or %company% if not available)
   %address% + %country%
@@ -150,6 +150,7 @@ modal CTAs:
 
 
 - notifications
-?
 
-
+- Ship to recipient? 
+- "2) In the 'edit contact' modal, there is a button to ship to contact"
+- this is undefined; needs separate story?
