@@ -2,13 +2,15 @@
 
 - When a user starts to type the Name field in the 'Shipment Details' screen, show a drop-down list of matches from their saved addresses
 - User must be able to click on and select any address in the drop-down list to populate the corresponding address fields
-- The drop-down (auto-fill) list must show Name and Address
+• The drop-down (auto-fill) list must show Name and Address
 - The drop-down list must be formatted as per UX design (must be attached to story or confluence page)
 • There must be an option in the drop-down list for 'this is a new contact/address' - per content writer (to dismiss the drop-down list)
 - The drop-down list must be dismissed when the user clicks anywhere else on the screen, or presses the 'esc' button
 - The list of matches must populate from the 1st character typed
 - The drop down list must show top 7 matches (as per address complete) and further typing is required to narrow down the list of results
 
+
+Name [tab] Address Line 1, Address Line 2, City, Prov/State/Territory, Country, Postal/Zip Code
 
 
 Hide suggestions
@@ -26,13 +28,7 @@ Hide suggestions
 [ ] Save to recipient list
 
 
-This information has been added to the recipient list.
-
-
-orig:     You've updated some details. Remember to indicate if you'd like to save them. 
-meaning:  You've made changes. Indicate if you want to save. It will be a new recipient. 
-suggest:  Indicate if you'd like to save your changes as a new recipient.  
-          (Clear enough that modify existing has to happen in list?)
+Indicate if you'd like to save your changes as a new recipient.  
 
 
 
@@ -52,7 +48,7 @@ link from details page to contacts:
 
 
 placeholder text for search field: 
-  Search names, addresses, or numbers
+  Search names and addresses
 
 
 link from contacts to details page:
@@ -95,9 +91,7 @@ CTAs:
 
 
 Save notification: 
-  Recipient details have been updated.
-  [or]
-  The recipient's details have been updated. [CHECK content style to see if anything's been established]
+  The recipient's details have been updated. 
 
 
 
@@ -122,8 +116,7 @@ modal CTAs:
 
 Delete notification: 
   The recipient has been removed from this list.
-  [or] 
-  The recipient has been deleted.
+
 
 
 ========   CSSP-285: address book, add info to form   ========
@@ -132,25 +125,18 @@ Delete notification:
 • when icon is clicked, user must be asked if they want to ship to this contact
 - When confirmed yes, the user must be taken to shipping details screen with contact fields filled in
 - if no, then user must remain on address book screen
-• In the 'edit[sic] contact' modal, there is a button to ship to contact <<<<<< view
 - If clicked, user must be taken to shipping details screen with contact fields filled in
 
 
 image "title" attribute:
-  Ship to recipient?              [system-style language; talk to her] <<<
+  Ship to recipient
 
 add-to-shipment confirmation modal title: 
-  Add information to shipment details
- >Ship to recipient?              [you're going to create a label that ships to this recipient]
+  Ship to recipient 
 modal body: 
   %name% (or %company% if not available)
   %address% + %country%
 modal CTAs: 
-  [Add] [Cancel]                   [look at style to see how large it can be]
+  Ship Cancel
 
 
-- notifications
-
-- Ship to recipient? 
-- "2) In the 'edit contact' modal, there is a button to ship to contact"
-- this is undefined; needs separate story?
