@@ -143,3 +143,36 @@ modal CTAs:
   Ship Cancel
 
 
+
+========   CSSP-205: updates to additional emails   ========
+
+delivery update checkbox
+  Send me delivery updates
+  
+additional email checkbox
+  Send updates to others
+
+first revealed email field
+  Additional email
+
+second revealed email field
+  Additional email
+
+
+
+========   CSSP-230: save failures   ========
+
+
+recipient list
+  There was an issue and this recipient couldn't be saved. Please try again later.
+
+
+confirmation page
+  There was an issue, and the recipient you created couldn't be saved. Try re-adding them later directly in the Recipient List.
+
+
+
+========   CSSP-301: on-demand copy hot fix   ========
+
+
+On-demand pickup in most locations [open in new page icon]
