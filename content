@@ -183,3 +183,88 @@ Then drop it off, or book a pickup online (available for most locations).
 
 The size and weight of your package
 
+
+
+========   CSSP-602: prog bar new spec   ========
+
+
+step name (was "Shipping method"); coordination with unauth copy
+  Shipping service
+
+
+
+========   CSSP-603: summary column on payment/confirmation pages   ========
+
+
+Subheadings below "Order total" ( was "Order summary")
+  Shipping summary 
+
+
+Promotional phrasing (too informal vs space, existing store phrasing, no standard)
+  Promo discount
+  Promo code 
+
+
+Pickup fee
+  Pickup
+
+Total pickup charge
+  Pickup total
+
+
+Receiver
+  Recipient
+
+Shipment
+  Item description
+
+
+Delete pickup booking
+  Cancel
+
+
+
+========   CSSP-502 A: shipping details (form)   ========
+
+
+Who is it from?
+
+Phone
+
+Send me delivery status up-dates
+
+Send delivery status updates to others
+
+Where is it going?
+
+Company
+
+Phone
+
+Email
+
+Send delivery status updates
+
+What type of item are you sending?
+
+
+
+========   CSSP-502 B: shipping details (descriptions)   ========
+
+
+Padded mailer
+  Bubble mailer
+
+
+Tube
+  Mailing tube
+
+
+see S7 content doc for description revisions
+
+
+
+
+
+
+
