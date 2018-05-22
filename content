@@ -224,6 +224,16 @@ Delete pickup booking
 
 
 
+========   CSSP-603: summary column on payment/confirmation pages   ========
+
+
+main issue deferred; minor fixes
+
+- add period to in. (EN only); for consistency 
+- "package" to "parcel" for VE tooltip (EN only) 
+
+
+
 ========   CSSP-502 A: shipping details (form)   ========
 
 
@@ -260,11 +270,20 @@ Tube
   Mailing tube
 
 
-see S7 content doc for description revisions
+[see S7 content doc for description revisions]
 
 
 
+========   CSSP-507 customs   ========
 
 
+[no net-new, only reorg; see story for revision image]
+
+
+
+========   CSSP-505 confirmation / post-payment   ========
+
+
+[revised IA for multiple scenarios; see S8 content doc for all variants]
 
 
